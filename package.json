@@ -1,0 +1,48 @@
+{
+  "name": "discord-bot-template",
+  "description": "A fully-featured Discord bot template built with TypeScript and Discord.js, designed for developers to quickly create bots with commands, interactions, and APIs.",
+  "version": "1.0.0",
+  "author": "Nahuel_70",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nahuel70/discord-bot-template.git"
+  },
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "concurrently \"tsc --watch\" \"nodemon --watch dist dist/index.js\"",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix"
+  },
+  "keywords": [
+    "discord",
+    "discord-bot",
+    "bot-template",
+    "typescript",
+    "discordjs"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/rest": "^2.5.1",
+    "chalk": "^5.5.0",
+    "discord-api-types": "^0.38.20",
+    "discord.js": "^14.21.0",
+    "dotenv": "^17.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.2.1",
+    "@typescript-eslint/eslint-plugin": "^8.39.1",
+    "@typescript-eslint/parser": "^8.39.1",
+    "concurrently": "^9.2.0",
+    "eslint": "^9.33.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.2"
+  }
+}
